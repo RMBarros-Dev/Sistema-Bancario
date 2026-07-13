@@ -1,0 +1,45 @@
+using Xunit;
+using SistemaBancario.Services;
+using SistemaBancario.Models;
+
+namespace SistemaBancario.Tests
+{
+    public class CardTests
+    {
+        [Fact]
+        public void CartaoCredito_AumentaFaturaAoComprar()
+        {
+            var repo = new InMemoryAccountRepository();
+            var accountService = new AccountService(repo);
+            var cardService = new CardService(repo);
+
+            var c = accountService.CriarContaCorrente("Cli", 9030, 100);
+            var card = cardService.CriarCartaoCredito("1111", 9030, 500);
+
+            var ok = card.Pagar(200);
+            Assert.True(ok);
+            Assert.Equal(200, card.Fatura);
+        }
+
+        [Fact]
+        public void PagarFatura_DebitaContaEReduzFatura()
+        {
+            var repo = new InMemoryAccountRepository();
+            var accountService = new AccountService(repo);
+            var cardService = new CardService(repo);
+
+            var c = accountService.CriarContaCorrente("Cli", 9040, 100);
+            accountService.Depositar(9040, 800);
+            var card = cardService.CriarCartaoCredito("2222", 9040, 1000);
+
+            var compra = card.Pagar(300);
+            Assert.True(compra);
+            Assert.Equal(300, card.Fatura);
+
+            var pago = card.PagarFatura(300);
+            Assert.True(pago);
+            Assert.Equal(0, card.Fatura);
+            Assert.Equal(500, c.ConsultarSaldo());
+        }
+    }
+}

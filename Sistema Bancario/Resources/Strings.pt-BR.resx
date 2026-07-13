@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  </xsd:schema>
+  <resheader name="resmimetype">
+	<value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+	<value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+	<value>System.Resources.ResXResourceReader, System.Windows.Forms, ...</value>
+  </resheader>
+  <resheader name="writer">
+	<value>System.Resources.ResXResourceWriter, System.Windows.Forms, ...</value>
+  </resheader>
+  <data name="Menu" xml:space="preserve">
+	<value>1-Depositar | 2-Sacar | 3-Consultar | 4-Transferir | 5-Extrato | 6-Pagar com Cartão | 7-Bloquear/Desbloquear Cartão | 0-Sair</value>
+  </data>
+  <data name="InvalidOption" xml:space="preserve">
+	<value>Opção inválida.</value>
+  </data>
+  <data name="Started" xml:space="preserve">
+	<value>--- SISTEMA BANCÁRIO INICIADO ---</value>
+  </data>
+  <data name="ConfirmTransfer" xml:space="preserve">
+	<value>Confirma transferência de {0} de {1} para {2}? s/n</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+	<value>Deseja continuar? s/n</value>
+  </data>
+</root>
