@@ -1,69 +1,58 @@
-# Sistema Bancário - Console Application (.NET 10)
+<div align="center">
 
-Este projeto é uma aplicação console desenvolvida em C# com .NET 10, projetada para simular operações bancárias essenciais. O objetivo principal deste sistema é demonstrar a aplicação de conceitos de Programação Orientada a Objetos (POO), estruturação de projetos em camadas e boas práticas de desenvolvimento de software.
+# Sistema Bancário
 
-## 🚀 Funcionalidades
+**Simulação educacional de operações bancárias em C#**
 
-* **Gestão de Contas:** Operações de débito e crédito em Contas Corrente e Poupança.
-* **Transferências:** Movimentação de saldo entre contas distintas.
-* **Gestão de Cartão:** Suporte a operações de cartão (débito/crédito).
-* **Histórico de Movimentações:** Rastreamento de transações realizadas.
-* **Autenticação:** Sistema de login seguro para acesso aos dados.
+[![.NET](https://img.shields.io/badge/.NET-10-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
+[![Testes](https://img.shields.io/badge/testes-xUnit-512BD4)](https://xunit.net/)
 
-## 🏗️ Estrutura do Projeto
+</div>
 
-O projeto segue uma organização modular para facilitar a manutenção e escalabilidade:
+## Sobre
 
-* `SistemaBancario/`: Projeto principal da aplicação.
-    * `Models/`: Classes de domínio (Conta, Cartão, Usuário, etc.).
-    * `Services/`: Lógica de negócio, serviços e gerenciamento de repositório.
-    * `UI/`: Interface de console (ConsoleUI) para interação com o usuário.
-* `SistemaBancario.Tests/`: Conjunto de testes automatizados com xUnit.
+Aplicação de console desenvolvida para praticar orientação a objetos e organização de código em camadas. O repositório inclui o projeto principal e um projeto de testes com xUnit.
 
-## 🛠️ Como Executar
+> Este é um projeto de estudo. As operações e fluxos apresentados são simulações; não use dados financeiros reais nem este software para operações bancárias reais.
 
-Certifique-se de ter o [.NET 10 SDK](https://dotnet.microsoft.com/) instalado em sua máquina.
+## Funcionalidades documentadas
 
-1. **Clone o repositório:**
-   ```bash
-   git clone <link-do-seu-repositorio>
-   cd <nome-da-pasta>
+- Operações de crédito e débito em contas
+- Transferências entre contas
+- Fluxos de cartão e histórico de movimentações
+- Fluxo de autenticação demonstrativo
 
+## Estrutura
+
+```text
+Sistema-Bancario/
+├── Sistema Bancario/       # Aplicação de console
+├── SistemaBancario.Tests/  # Testes automatizados
+├── appsettings.json        # Configurações da aplicação
+└── Sistema Bancario.slnx
 ```
 
-2. **Restaurar dependências:**
+## Executar
+
+Requer o .NET 10 SDK. Na raiz do repositório:
+
 ```bash
-dotnet restore
-
-```
-
-
-3. **Executar a aplicação:**
-```bash
+dotnet restore "Sistema Bancario.slnx"
 dotnet run --project "Sistema Bancario/Sistema Bancario.csproj"
-
 ```
 
+## Testes
 
-
-## 🧪 Testes
-
-Para garantir a integridade das regras de negócio, o projeto possui uma camada de testes automatizados. Execute-os com o comando:
+Para executar os testes automatizados:
 
 ```bash
-dotnet test
-
+dotnet test "SistemaBancario.Tests/SistemaBancario.Tests.csproj"
 ```
 
-## ⚙️ Configurações
+## Configuração
 
-O sistema utiliza o arquivo `appsettings.json` para gerenciar configurações globais, como limites de cartão e chaves de ambiente. Certifique-se de que o arquivo esteja preenchido corretamente antes de iniciar a aplicação.
+O projeto inclui `appsettings.json`. Revise as configurações locais antes de executar e mantenha dados sensíveis fora do repositório.
 
----
+## Licença
 
-## ⚠️ Aviso Legal
-
-Este projeto foi desenvolvido estritamente para **fins educacionais e de demonstração**.
-
-* Não utilize este código em ambientes de produção.
-* A implementação não contém tratamentos de concorrência, persistência de dados em banco real ou medidas avançadas de cibersegurança necessárias para sistemas bancários reais.
+Consulte [LICENSE.txt](LICENSE.txt).
