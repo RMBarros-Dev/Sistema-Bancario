@@ -1,5 +1,10 @@
 <div align="center">
 
+<p align="center">
+  <img src="assets/brand/project-mark.svg" alt="SISTEMA — identidade visual do projeto" width="100%" />
+</p>
+
+
 # Sistema Bancário
 
 **Simulação educacional de operações bancárias em C#**
