@@ -1,28 +1,37 @@
-name: .NET
+name: Sistema Bancario CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [master]
   pull_request:
-    branches: [ main ]
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sistema-bancario-ci-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  build:
+  build-and-test:
+    name: Restore, build and run xUnit tests
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v4
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: '10.0.x'
+      - name: Check out repository
+        uses: actions/checkout@v4
 
-    - name: Restore
-      run: dotnet restore "Sistema Bancario/Sistema Bancario.csproj"
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
 
-    - name: Build
-      run: dotnet build --no-restore "Sistema Bancario/Sistema Bancario.csproj" -c Release
+      - name: Restore application
+        run: dotnet restore "Sistema Bancario/Sistema Bancario.csproj"
 
-    - name: Test
-      run: |
-        dotnet test "SistemaBancario.Tests/SistemaBancario.Tests.csproj" --no-build -c Release
+      - name: Build application
+        run: dotnet build "Sistema Bancario/Sistema Bancario.csproj" --configuration Release --no-restore
+
+      - name: Run xUnit tests
+        run: dotnet test "SistemaBancario.Tests/SistemaBancario.Tests.csproj" --configuration Release
