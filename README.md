@@ -18,6 +18,18 @@
 
 ---
 
+## Índice
+
+- [Visão geral e área de aplicação](#visão-geral)
+- [Funcionalidades](#funcionalidades-documentadas)
+- [Arquitetura](#arquitetura)
+- [Tecnologias e técnicas](#tecnologias-e-conceitos)
+- [Metodologia](#metodologia-de-desenvolvimento)
+- [Requisitos e execução](#requisitos)
+- [Estrutura de arquivos](#estrutura-do-repositório)
+- [Segurança e limitações](#segurança-e-limites-de-uso)
+- [Documentação e licença](#documentação-e-licença)
+
 ## Visão geral
 
 Aplicação de console organizada em modelos, serviços, interfaces de repositório e camada de interação com o usuário. O repositório também contém um projeto de testes automatizados com xUnit.
@@ -50,6 +62,10 @@ flowchart TD
     Tests[xUnit Tests] --> AccountService
     Tests --> CardService
 ```
+
+## Metodologia de desenvolvimento
+
+O projeto está organizado para permitir evolução incremental do domínio: modelos representam entidades, serviços coordenam operações, interfaces de repositório desacoplam a persistência e testes verificam comportamentos selecionados. Alterações em regras financeiras simuladas devem ser acompanhadas por testes correspondentes.
 
 ## Tecnologias e conceitos
 
@@ -110,6 +126,13 @@ Sistema-Bancario/
 └── Sistema Bancario.slnx
 ```
 
+## Documentação
+
+- [Identidade visual](docs/brand/README.md).
+- [Banner SVG](assets/brand/banner.svg) e [logotipo SVG](assets/brand/logo.svg).
+- [Workflow .NET](.github/workflows/dotnet.yml).
+- [Projeto de testes](SistemaBancario.Tests/).
+
 ## Segurança e limites de uso
 
 Este é um projeto educacional. As operações e fluxos são simulações. Não utilize dados bancários reais, credenciais reais ou este software para movimentações financeiras. Antes de qualquer aplicação real seriam necessários, entre outros pontos, controles de segurança, auditoria, criptografia, conformidade regulatória, testes adicionais e revisão independente.
@@ -118,6 +141,10 @@ Este é um projeto educacional. As operações e fluxos são simulações. Não 
 
 Paleta, símbolo e banner estão em [assets/brand](assets/brand/). Consulte [docs/brand/README.md](docs/brand/README.md).
 
-## Licença
+## Princípios de engenharia
+
+Separação de responsabilidades, interfaces para abstrair persistência, testes para regras de domínio, configuração por ambiente e proteção de dados são princípios relevantes para este projeto. A implementação é educacional e não substitui controles exigidos em sistemas financeiros reais.
+
+## Documentação e licença
 
 Consulte [LICENSE.txt](LICENSE.txt).
