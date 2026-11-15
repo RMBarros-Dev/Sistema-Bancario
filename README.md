@@ -36,6 +36,10 @@ Aplicação de console organizada em modelos, serviços, interfaces de repositó
 
 O objetivo é demonstrar conceitos de domínio e separação de responsabilidades em C#/.NET, não oferecer um produto bancário real.
 
+## Área de aplicação
+
+O projeto é uma simulação educacional de conceitos de domínio bancário. Serve para estudar modelagem de contas, operações, serviços e persistência em C#, sem finalidade de movimentação financeira real.
+
 ## Funcionalidades documentadas
 
 - Operações de crédito e débito.
