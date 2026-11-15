@@ -126,20 +126,9 @@ Sistema-Bancario/
 └── Sistema Bancario.slnx
 ```
 
-## Documentação
-
-- [Identidade visual](docs/brand/README.md).
-- [Banner SVG](assets/brand/banner.svg) e [logotipo SVG](assets/brand/logo.svg).
-- [Workflow .NET](.github/workflows/dotnet.yml).
-- [Projeto de testes](SistemaBancario.Tests/).
-
 ## Segurança e limites de uso
 
 Este é um projeto educacional. As operações e fluxos são simulações. Não utilize dados bancários reais, credenciais reais ou este software para movimentações financeiras. Antes de qualquer aplicação real seriam necessários, entre outros pontos, controles de segurança, auditoria, criptografia, conformidade regulatória, testes adicionais e revisão independente.
-
-## Identidade visual
-
-Paleta, símbolo e banner estão em [assets/brand](assets/brand/). Consulte [docs/brand/README.md](docs/brand/README.md).
 
 ## Princípios de engenharia
 
@@ -147,4 +136,7 @@ Separação de responsabilidades, interfaces para abstrair persistência, testes
 
 ## Documentação e licença
 
-Consulte [LICENSE.txt](LICENSE.txt).
+- [Organização de arquivos](docs/project-structure.md).
+- [Identidade visual](docs/brand/README.md).
+- [Workflow .NET](.github/workflows/dotnet.yml).
+- [Licença](LICENSE.txt).
