@@ -8,13 +8,13 @@ namespace SistemaBancario.Services
     {
         private readonly IAccountRepository _repo;
         private readonly ILogger<CardService>? _logger;
-        private readonly double _defaultLimit;
+        private readonly decimal _defaultLimit;
 
         public CardService(IAccountRepository repo, ILogger<CardService>? logger = null, IConfiguration? configuration = null)
         {
             _repo = repo;
             _logger = logger;
-            if (configuration != null && double.TryParse(configuration["Banco:DefaultCardLimit"], out var lim)) _defaultLimit = lim; else _defaultLimit = 1000.0;
+            if (configuration != null && decimal.TryParse(configuration["Banco:DefaultCardLimit"], out var lim)) _defaultLimit = lim; else _defaultLimit = 1000.0m;
         }
 
         public Cartao? CriarCartaoDebito(string numeroCartao, int numeroConta)
@@ -26,7 +26,7 @@ namespace SistemaBancario.Services
             return cartao;
         }
 
-        public Cartao? CriarCartaoCredito(string numeroCartao, int numeroConta, double? limite = null)
+        public Cartao? CriarCartaoCredito(string numeroCartao, int numeroConta, decimal? limite = null)
         {
             var conta = _repo.Get(numeroConta);
             if (conta == null) return null;

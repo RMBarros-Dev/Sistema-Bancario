@@ -45,7 +45,7 @@ var accountService = host.Services.GetRequiredService<IAccountService>();
 var cardService = host.Services.GetRequiredService<CardService>();
 
 // Cria contas de exemplo somente se não existirem
-if (repo.Get(1001) == null) accountService.CriarContaCorrente("Cliente", 1001, 500.0);
+if (repo.Get(1001) == null) accountService.CriarContaCorrente("Cliente", 1001, 500.0m);
 if (repo.Get(1002) == null) accountService.CriarContaPoupanca("Cliente", 1002);
 
 var ui = host.Services.GetRequiredService<ConsoleUI>();

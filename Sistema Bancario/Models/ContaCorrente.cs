@@ -2,14 +2,14 @@ namespace SistemaBancario.Models
 {
     public class ContaCorrente : Conta
     {
-        public double Limite { get; set; }
+        public decimal Limite { get; set; }
 
-        public ContaCorrente(string titular, int numero, double limite) : base(titular, numero)
+        public ContaCorrente(string titular, int numero, decimal limite) : base(titular, numero)
         {
             Limite = limite;
         }
 
-        public override bool Sacar(double valor)
+        public override bool Sacar(decimal valor)
         {
             if (valor > 0 && (_saldo + Limite) >= valor)
             {

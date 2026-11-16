@@ -4,7 +4,7 @@ namespace SistemaBancario.Models
     {
         public ContaPoupanca(string titular, int numero) : base(titular, numero) { }
 
-        public override bool Sacar(double valor)
+        public override bool Sacar(decimal valor)
         {
             if (valor > 0 && _saldo >= valor)
             {

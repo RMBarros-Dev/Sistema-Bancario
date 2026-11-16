@@ -10,8 +10,8 @@ namespace SistemaBancario.Models
 
         // Para cartão de crédito simples
         public TipoCartao Tipo { get; set; }
-        public double Fatura { get; private set; }
-        public double LimiteCredito { get; set; }
+        public decimal Fatura { get; private set; }
+        public decimal LimiteCredito { get; set; }
 
         public Cartao(string numero, Conta conta, TipoCartao tipo = TipoCartao.Debito)
         {
@@ -19,14 +19,14 @@ namespace SistemaBancario.Models
             ContaAssociada = conta;
             Bloqueado = false;
             Tipo = tipo;
-            Fatura = 0.0;
-            LimiteCredito = 0.0;
+            Fatura = 0.0m;
+            LimiteCredito = 0.0m;
         }
 
         public void Bloquear() => Bloqueado = true;
         public void Desbloquear() => Bloqueado = false;
 
-        public bool Pagar(double valor)
+        public bool Pagar(decimal valor)
         {
             if (Bloqueado) return false;
 
@@ -53,9 +53,9 @@ namespace SistemaBancario.Models
             }
         }
 
-        public bool PagarFatura(double valor)
+        public bool PagarFatura(decimal valor)
         {
-            if (valor <= 0) return false;
+            if (valor <= 0 || valor > Fatura) return false;
             if (ContaAssociada.Sacar(valor))
             {
                 Fatura = System.Math.Max(0, Fatura - valor);
