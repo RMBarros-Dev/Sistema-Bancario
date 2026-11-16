@@ -22,6 +22,23 @@ namespace SistemaBancario.Tests
         }
 
         [Fact]
+        public void PagarFatura_RejeitaValorAcimaDaFatura()
+        {
+            var repo = new InMemoryAccountRepository();
+            var accountService = new AccountService(repo);
+            var cardService = new CardService(repo);
+
+            var account = accountService.CriarContaCorrente("Cli", 9041, 100m);
+            accountService.Depositar(9041, 500m);
+            var card = cardService.CriarCartaoCredito("3333", 9041, 1000m);
+            Assert.True(card.Pagar(100m));
+
+            Assert.False(card.PagarFatura(150m));
+            Assert.Equal(500m, account.ConsultarSaldo());
+            Assert.Equal(100m, card.Fatura);
+        }
+
+        [Fact]
         public void PagarFatura_DebitaContaEReduzFatura()
         {
             var repo = new InMemoryAccountRepository();
