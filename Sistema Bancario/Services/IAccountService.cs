@@ -5,11 +5,11 @@ namespace SistemaBancario.Services
 {
     public interface IAccountService
     {
-        ContaCorrente CriarContaCorrente(string titular, int numero, double limite);
+        ContaCorrente CriarContaCorrente(string titular, int numero, decimal limite);
         ContaPoupanca CriarContaPoupanca(string titular, int numero);
-        bool Depositar(int numeroConta, double valor);
-        bool Sacar(int numeroConta, double valor);
-        bool Transferir(int origem, int destino, double valor);
+        bool Depositar(int numeroConta, decimal valor);
+        bool Sacar(int numeroConta, decimal valor);
+        bool Transferir(int origem, int destino, decimal valor);
         Conta? ObterConta(int numeroConta);
         IEnumerable<Conta> ListarContas();
     }
