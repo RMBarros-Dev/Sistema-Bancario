@@ -11,6 +11,27 @@
   <a href="https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/codeql.yml"><img src="https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/codeql.yml/badge.svg?branch=master" alt="CodeQL status" /></a>
 </p>
 
+## Contents
+
+- [01 · Overview](#01--overview)
+- [02 · Educational Scope](#02--edcationalscope)
+- [03 · Functional Areas](#03--nctionalareas)
+- [04 · Domain Model](#04--domainmodel)
+- [05 · Architecture](#05--architectre)
+- [06 · Technology Stack](#06--technologystack)
+- [07 · Requirements](#07--reqirements)
+- [08 · Restore and Run](#08--restoreandrn)
+- [09 · Run Automated Tests](#09--rnatomatedtests)
+- [10 · Monetary Precision](#10--monetaryprecision)
+- [11 · Persistence](#11--persistence)
+- [12 · Localization Resources](#12--localizationresorces)
+- [13 · Security and Safe Use](#13--secrityandsaese)
+- [14 · Quality and Testing](#14--qalityandtesting)
+- [15 · Repository Structure](#15--repositorystrctre)
+- [16 · Development Methodology](#16--developmentmethodology)
+- [17 · Documentation and Engineering Principles](#17--docmentationandengineeringprinciples)
+- [18 · License and Attribution](#18--licenseandattribtion)
+
 ## 01 · Overview
 
 A .NET console application organized into domain models, services, repository interfaces and a user-interaction layer. The repository also contains an xUnit automated test project.
