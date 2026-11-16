@@ -72,7 +72,7 @@ namespace SistemaBancario
             Console.Write("Número da conta: ");
             if (!int.TryParse(Console.ReadLine(), out int num)) { Console.WriteLine("Entrada inválida."); return; }
             Console.Write("Valor a depositar: ");
-            if (!double.TryParse(Console.ReadLine(), out double v)) { Console.WriteLine("Entrada inválida."); return; }
+            if (!decimal.TryParse(Console.ReadLine(), out decimal v)) { Console.WriteLine("Entrada inválida."); return; }
             if (_accounts.Depositar(num, v)) Console.WriteLine("Depósito realizado."); else Console.WriteLine("Falha no depósito.");
         }
 
@@ -81,7 +81,7 @@ namespace SistemaBancario
             Console.Write("Número da conta: ");
             if (!int.TryParse(Console.ReadLine(), out int num)) { Console.WriteLine("Entrada inválida."); return; }
             Console.Write("Valor a sacar: ");
-            if (!double.TryParse(Console.ReadLine(), out double v)) { Console.WriteLine("Entrada inválida."); return; }
+            if (!decimal.TryParse(Console.ReadLine(), out decimal v)) { Console.WriteLine("Entrada inválida."); return; }
             if (_accounts.Sacar(num, v)) Console.WriteLine("Saque realizado."); else Console.WriteLine("Saldo insuficiente.");
         }
 
@@ -100,7 +100,7 @@ namespace SistemaBancario
             Console.Write("Conta destino: ");
             if (!int.TryParse(Console.ReadLine(), out int d)) { Console.WriteLine("Entrada inválida."); return; }
             Console.Write("Valor: ");
-            if (!double.TryParse(Console.ReadLine(), out double v)) { Console.WriteLine("Entrada inválida."); return; }
+            if (!decimal.TryParse(Console.ReadLine(), out decimal v)) { Console.WriteLine("Entrada inválida."); return; }
             if (_accounts.Transferir(o, d, v)) Console.WriteLine("Transferência efetuada."); else Console.WriteLine("Falha na transferência: saldo indisponível ou conta não encontrada.");
         }
 
@@ -119,7 +119,7 @@ namespace SistemaBancario
             Console.Write("Número da conta vinculada ao cartão: ");
             if (!int.TryParse(Console.ReadLine(), out int num)) { Console.WriteLine("Entrada inválida."); return; }
             Console.Write("Valor a pagar: ");
-            if (!double.TryParse(Console.ReadLine(), out double v)) { Console.WriteLine("Entrada inválida."); return; }
+            if (!decimal.TryParse(Console.ReadLine(), out decimal v)) { Console.WriteLine("Entrada inválida."); return; }
 
             var card = _cards.CriarCartaoDebito("virtual", num);
             if (card == null) { Console.WriteLine("Conta não encontrada para cartão."); return; }
