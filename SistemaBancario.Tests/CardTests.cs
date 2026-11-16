@@ -18,7 +18,7 @@ namespace SistemaBancario.Tests
 
             var ok = card.Pagar(200);
             Assert.True(ok);
-            Assert.Equal(200, card.Fatura);
+            Assert.Equal(200m, card.Fatura);
         }
 
         [Fact]
@@ -34,12 +34,12 @@ namespace SistemaBancario.Tests
 
             var compra = card.Pagar(300);
             Assert.True(compra);
-            Assert.Equal(300, card.Fatura);
+            Assert.Equal(300m, card.Fatura);
 
             var pago = card.PagarFatura(300);
             Assert.True(pago);
-            Assert.Equal(0, card.Fatura);
-            Assert.Equal(500, c.ConsultarSaldo());
+            Assert.Equal(0m, card.Fatura);
+            Assert.Equal(500m, c.ConsultarSaldo());
         }
     }
 }
