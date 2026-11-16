@@ -15,7 +15,7 @@ namespace SistemaBancario.Tests
 
             var result = service.Depositar(9001, 200);
             Assert.True(result);
-            Assert.Equal(200, c.ConsultarSaldo());
+            Assert.Equal(200m, c.ConsultarSaldo());
         }
 
         [Fact]
@@ -28,7 +28,7 @@ namespace SistemaBancario.Tests
 
             var res = service.Sacar(9002, 150);
             Assert.True(res);
-            Assert.Equal(150, c.ConsultarSaldo());
+            Assert.Equal(150m, c.ConsultarSaldo());
         }
 
         [Fact]
@@ -42,8 +42,8 @@ namespace SistemaBancario.Tests
 
             var ok = service.Transferir(9010, 9011, 200);
             Assert.True(ok);
-            Assert.Equal(300, c1.ConsultarSaldo());
-            Assert.Equal(200, c2.ConsultarSaldo());
+            Assert.Equal(300m, c1.ConsultarSaldo());
+            Assert.Equal(200m, c2.ConsultarSaldo());
         }
 
         [Fact]
@@ -58,7 +58,7 @@ namespace SistemaBancario.Tests
 
             var pago = card.Pagar(150);
             Assert.True(pago);
-            Assert.Equal(250, c.ConsultarSaldo());
+            Assert.Equal(250m, c.ConsultarSaldo());
         }
     }
 }
