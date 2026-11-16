@@ -55,7 +55,7 @@ namespace SistemaBancario.Models
 
         public bool PagarFatura(decimal valor)
         {
-            if (valor <= 0) return false;
+            if (valor <= 0 || valor > Fatura) return false;
             if (ContaAssociada.Sacar(valor))
             {
                 Fatura = System.Math.Max(0, Fatura - valor);
