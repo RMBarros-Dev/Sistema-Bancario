@@ -47,6 +47,25 @@ namespace SistemaBancario.Tests
         }
 
         [Fact]
+        public void Deposito_UsaPrecisaoDecimal()
+        {
+            var conta = new ContaPoupanca("Precisão", 9050);
+            Assert.True(conta.Depositar(0.1m));
+            Assert.True(conta.Depositar(0.2m));
+            Assert.Equal(0.3m, conta.ConsultarSaldo());
+        }
+
+        [Fact]
+        public void Transferencia_RejeitaMesmaContaSemAlterarSaldo()
+        {
+            var conta = new ContaCorrente("Mesmo titular", 9051, 0m);
+            conta.Depositar(50m);
+
+            Assert.False(conta.Transferir(conta, 10m));
+            Assert.Equal(50m, conta.ConsultarSaldo());
+        }
+
+        [Fact]
         public void Cartao_Debito_PagaQuandoSaldoSuficiente()
         {
             var repo = new InMemoryAccountRepository();
