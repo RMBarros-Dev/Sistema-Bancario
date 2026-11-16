@@ -16,6 +16,11 @@
   <img src="https://img.shields.io/badge/CI-GitHub_Actions-2088FF?logo=githubactions&logoColor=white" alt="GitHub Actions"/>
 </p>
 
+
+<p align="center">
+  [![CI](https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/dotnet.yml/badge.svg?branch=master)](https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/dotnet.yml) [![CodeQL](https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/codeql.yml)
+</p>
+
 ---
 
 ## Índice
