@@ -15,7 +15,7 @@ namespace SistemaBancario.Services
             _logger = logger;
         }
 
-        public ContaCorrente CriarContaCorrente(string titular, int numero, double limite)
+        public ContaCorrente CriarContaCorrente(string titular, int numero, decimal limite)
         {
             var c = new ContaCorrente(titular, numero, limite);
             _repo.Add(c);
@@ -29,7 +29,7 @@ namespace SistemaBancario.Services
             return c;
         }
 
-        public bool Depositar(int numeroConta, double valor)
+        public bool Depositar(int numeroConta, decimal valor)
         {
             var c = _repo.Get(numeroConta);
             if (c == null) return false;
@@ -39,7 +39,7 @@ namespace SistemaBancario.Services
             return ok;
         }
 
-        public bool Sacar(int numeroConta, double valor)
+        public bool Sacar(int numeroConta, decimal valor)
         {
             var c = _repo.Get(numeroConta);
             if (c == null) return false;
@@ -49,7 +49,7 @@ namespace SistemaBancario.Services
             return ok;
         }
 
-        public bool Transferir(int origem, int destino, double valor)
+        public bool Transferir(int origem, int destino, decimal valor)
         {
             var cOrig = _repo.Get(origem);
             var cDest = _repo.Get(destino);
