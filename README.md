@@ -18,7 +18,8 @@
 
 
 <p align="center">
-  [![CI](https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/dotnet.yml/badge.svg?branch=master)](https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/dotnet.yml) [![CodeQL](https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/codeql.yml)
+  <a href="https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/dotnet.yml"><img src="https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/dotnet.yml/badge.svg?branch=master" alt="CI status" /></a>
+  <a href="https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/codeql.yml"><img src="https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/codeql.yml/badge.svg?branch=master" alt="CodeQL status" /></a>
 </p>
 
 ---
@@ -74,7 +75,7 @@ flowchart TD
 
 ## Metodologia de desenvolvimento
 
-O projeto está organizado para permitir evolução incremental do domínio: modelos representam entidades, serviços coordenam operações, interfaces de repositório desacoplam a persistência e testes verificam comportamentos selecionados. Alterações em regras financeiras simuladas devem ser acompanhadas por testes correspondentes.
+O projeto está organizado para permitir evolução incremental do domínio: modelos representam entidades, serviços coordenam operações, interfaces de repositório desacoplam a persistência e testes verificam comportamentos selecionados. Alterações em regras financeiras simuladas devem ser acompanhadas por testes correspondentes. Os valores monetários do domínio usam `decimal`, e a persistência em arquivo grava por substituição atômica para reduzir o risco de deixar um JSON parcialmente escrito. Arquivos JSON inválidos agora interrompem a inicialização com erro explícito, em vez de serem ignorados silenciosamente.
 
 ## Tecnologias e conceitos
 
