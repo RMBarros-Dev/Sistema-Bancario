@@ -3,7 +3,8 @@
 <p align="center"><img src="assets/brand/banner.svg" alt="Banking System educational C sharp simulation" width="100%" /></p>
 <p align="center"><img src="assets/brand/logo.svg" alt="Banking System logo" width="76" /></p>
 <h1 align="center">Banking System</h1>
-<p align="center"><strong>Educational console simulation of banking operations in C#.</strong></p>
+<p align="center"><strong>Precision in rules. Clarity in operations.</strong></p>
+<p align="center">Educational console simulation of banking operations in C#.</p>
 <p align="center">
   <img src="https://img.shields.io/badge/C%23-.NET%2010-512BD4?logo=dotnet&logoColor=white" alt="C sharp .NET 10" />
   <img src="https://img.shields.io/badge/Tests-xUnit-512BD4?logo=dotnet&logoColor=white" alt="xUnit" />
