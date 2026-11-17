@@ -43,7 +43,7 @@ O projeto simula conceitos selecionados do domínio bancário para praticar orie
 
 ## 02 · Demonstração real e referências visuais
 
-O README atual não identifica uma URL pública nem uma captura real da execução. Use a demonstração local ou as referências visuais indicadas nesta seção.
+Este repositório não apresenta uma URL de demonstração web hospedada nem capturas da execução. A demonstração é local, por terminal, utilizando o comando do guia de utilização. O banner e o logotipo são elementos de identidade visual, não evidências da interface em execução.
 
 ## 03 · Funcionalidades e estado de implementação
 
