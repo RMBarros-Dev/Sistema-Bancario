@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+<title id="title">Sistema Bancário — símbolo para fundo claro</title><desc id="desc">Símbolo de módulos de conta conectados, otimizado para fundos claros.</desc>
+<rect x="8" y="8" width="240" height="240" rx="54" fill="#F4F1EA" stroke="#D6D0C4" stroke-width="2"/>
+<rect x="43" y="62" width="66" height="132" rx="13" fill="none" stroke="#087F7A" stroke-width="10"/><rect x="147" y="62" width="66" height="132" rx="13" fill="none" stroke="#A9772F" stroke-width="10"/>
+<path d="M109 128H147" stroke="#101D2B" stroke-width="10" stroke-linecap="round"/><circle cx="128" cy="128" r="15" fill="#087F7A" stroke="#F4F1EA" stroke-width="5"/>
+<path d="M76 94v0m0 34v0m0 34v0M180 94v0m0 34v0m0 34v0" stroke="#101D2B" stroke-width="10" stroke-linecap="round"/><path d="M62 216H194" stroke="#087F7A" stroke-width="5" stroke-linecap="round"/>
+</svg>
