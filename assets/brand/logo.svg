@@ -1,8 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
-<title id="title">Sistema Bancário — símbolo</title><desc id="desc">Símbolo vetorial de identidade visual do projeto Sistema Bancário.</desc>
-<defs><linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#16C8E8"/><stop offset="1" stop-color="#DCEBFF"/></linearGradient><radialGradient id="surface"><stop stop-color="#061B3B"/><stop offset="1" stop-color="#020817"/></radialGradient></defs>
-<circle cx="128" cy="128" r="122" fill="url(#ring)"/><circle cx="128" cy="128" r="113" fill="url(#surface)" stroke="#1E3A5F" stroke-width="2"/>
-<g transform="translate(0 0)"><path d="M55 92 128 48l73 44Z" fill="#DCEBFF" opacity=".95"/><path d="M65 101h126M72 108v72m37-72v72m38-72v72m37-72v72M58 185h140M48 198h160" stroke="#16C8E8" stroke-width="10" stroke-linecap="round" fill="none"/><path d="M105 185v-36a23 23 0 0 1 46 0v36" fill="none" stroke="#DCEBFF" stroke-width="8"/></g>
-<path d="M50 218Q128 239 206 218" fill="none" stroke="#16C8E8" stroke-width="4" stroke-linecap="round"/>
-<text x="128" y="238" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#F8FAFC" letter-spacing="1">SISTEMA BANCÁRIO</text>
+<title id="title">Sistema Bancário — símbolo</title><desc id="desc">Símbolo abstrato de precisão financeira educacional: dois módulos de conta ligados por um eixo central.</desc>
+<rect x="8" y="8" width="240" height="240" rx="54" fill="#101D2B"/>
+<rect x="43" y="62" width="66" height="132" rx="13" fill="none" stroke="#35B7B1" stroke-width="10"/>
+<rect x="147" y="62" width="66" height="132" rx="13" fill="none" stroke="#E2B66F" stroke-width="10"/>
+<path d="M109 128H147" stroke="#F4F1EA" stroke-width="10" stroke-linecap="round"/>
+<circle cx="128" cy="128" r="15" fill="#35B7B1" stroke="#101D2B" stroke-width="5"/>
+<path d="M76 94h0m0 34h0m0 34h0M180 94h0m0 34h0m0 34h0" stroke="#F4F1EA" stroke-width="10" stroke-linecap="round"/>
+<path d="M62 216H194" stroke="#35B7B1" stroke-width="5" stroke-linecap="round"/>
 </svg>
