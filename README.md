@@ -3,7 +3,8 @@
 <p align="center"><img src="assets/brand/banner.svg" alt="Sistema Bancário — simulação educacional em C#" width="100%" /></p>
 <p align="center"><img src="assets/brand/logo.svg" alt="Logotipo do Sistema Bancário" width="76" /></p>
 <h1 align="center">Sistema Bancário</h1>
-<p align="center"><strong>Simulação educacional de operações bancárias em C# para terminal.</strong></p>
+<p align="center"><strong>Precisão nas regras. Clareza nas operações.</strong></p>
+<p align="center">Simulação educacional de operações bancárias em C# para terminal.</p>
 <p align="center">
   <img src="https://img.shields.io/badge/C%23-.NET%2010-512BD4?logo=dotnet&logoColor=white" alt="C# .NET 10" />
   <img src="https://img.shields.io/badge/Tests-xUnit-512BD4?logo=dotnet&logoColor=white" alt="xUnit" />
