@@ -1,66 +1,67 @@
-<p align="right"><strong>Idioma:</strong> <a href="README.md">Português (Brasil)</a> · <a href="README.en.md">English</a></p>
+<p align="right"><strong>Language:</strong> <a href="README.pt-BR.md">Português (Brasil)</a> · <a href="README.md">English</a></p>
 
-<p align="center"><img src="assets/brand/banner.svg" alt="Sistema Bancário — simulação educacional em C#" width="100%" /></p>
-<p align="center"><img src="assets/brand/logo.svg" alt="Logotipo do Sistema Bancário" width="76" /></p>
-<h1 align="center">Sistema Bancário</h1>
-<p align="center"><strong>Precisão nas regras. Clareza nas operações.</strong></p>
-<p align="center">Simulação educacional de operações bancárias em C# para terminal.</p>
+<p align="center"><img src="assets/brand/banner.svg" alt="Banking System educational C sharp simulation" width="100%" /></p>
+<p align="center"><img src="assets/brand/logo.svg" alt="Banking System logo" width="76" /></p>
+<h1 align="center">Banking System</h1>
+<p align="center"><strong>Precision in rules. Clarity in operations.</strong></p>
+<p align="center">Educational console simulation of banking operations in C#.</p>
 <p align="center">
-  <img src="https://img.shields.io/badge/C%23-.NET%2010-512BD4?logo=dotnet&logoColor=white" alt="C# .NET 10" />
+  <img src="https://img.shields.io/badge/C%23-.NET%2010-512BD4?logo=dotnet&logoColor=white" alt="C sharp .NET 10" />
   <img src="https://img.shields.io/badge/Tests-xUnit-512BD4?logo=dotnet&logoColor=white" alt="xUnit" />
-  <a href="https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/dotnet.yml"><img src="https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/dotnet.yml/badge.svg?branch=master" alt="Status da CI" /></a>
-  <a href="https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/codeql.yml"><img src="https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/codeql.yml/badge.svg?branch=master" alt="Status do CodeQL" /></a>
+  <a href="https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/dotnet.yml"><img src="https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/dotnet.yml/badge.svg?branch=master" alt="CI status" /></a>
+  <a href="https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/codeql.yml"><img src="https://github.com/RMBarros-Dev/Sistema-Bancario/actions/workflows/codeql.yml/badge.svg?branch=master" alt="CodeQL status" /></a>
 </p>
 
-## Índice
+## Contents
 
-- [01 · Visão geral](#01--visão-geral)
-- [02 · Objetivo e escopo educacional](#02--objetivo-e-escopo-educacional)
-- [03 · Funcionalidades documentadas](#03--funcionalidades-documentadas)
-- [04 · Modelo de domínio](#04--modelo-de-domínio)
-- [05 · Arquitetura](#05--arquitetura)
-- [06 · Tecnologias](#06--tecnologias)
-- [07 · Requisitos](#07--requisitos)
-- [08 · Restaurar e executar](#08--restaurar-e-executar)
-- [09 · Executar os testes](#09--executar-os-testes)
-- [10 · Precisão monetária](#10--precisão-monetária)
-- [11 · Persistência](#11--persistência)
-- [12 · Recursos de localização](#12--recursos-de-localização)
-- [13 · Segurança e uso responsável](#13--segurança-e-uso-responsável)
-- [14 · Qualidade e testes](#14--qualidade-e-testes)
-- [15 · Estrutura do repositório](#15--estrutura-do-repositório)
-- [16 · Metodologia de desenvolvimento](#16--metodologia-de-desenvolvimento)
-- [17 · Limitações conhecidas](#17--limitações-conhecidas)
-- [18 · Documentação e licença](#18--documentação-e-licença)
+- [01 · Overview](#01--overview)
+- [02 · Educational Scope](#02--educational-scope)
+- [03 · Functional Areas](#03--functional-areas)
+- [04 · Domain Model](#04--domain-model)
+- [05 · Architecture](#05--architecture)
+- [06 · Technology Stack](#06--technology-stack)
+- [07 · Requirements](#07--requirements)
+- [08 · Restore and Run](#08--restore-and-run)
+- [09 · Run Automated Tests](#09--run-automated-tests)
+- [10 · Monetary Precision](#10--monetary-precision)
+- [11 · Persistence](#11--persistence)
+- [12 · Localization Resources](#12--localization-resources)
+- [13 · Security and Safe Use](#13--security-and-safe-use)
+- [14 · Quality and Testing](#14--quality-and-testing)
+- [15 · Repository Structure](#15--repository-structure)
+- [16 · Development Methodology](#16--development-methodology)
+- [17 · Documentation and Engineering Principles](#17--documentation-and-engineering-principles)
+- [18 · License and Attribution](#18--license-and-attribution)
 
-## 01 · Visão geral
+## 01 · Overview
 
-Aplicação de console em C#/.NET organizada em modelos de domínio, serviços, interfaces de repositório e camada de interação com o usuário. O repositório também contém um projeto de testes automatizados com xUnit.
+A .NET console application organized into domain models, services, repository interfaces and a user-interaction layer. The repository also contains an xUnit automated test project.
 
-## 02 · Objetivo e escopo educacional
+## 02 · Educational Scope
 
-O projeto simula conceitos selecionados do domínio bancário para praticar orientação a objetos, regras de negócio, abstrações de persistência e testes automatizados. Não é um produto bancário nem um serviço financeiro real.
+The project simulates selected banking-domain concepts to practice C#/.NET, object-oriented design, business rules, persistence abstractions and automated tests. It is not a real banking product or financial service.
 
-## 03 · Funcionalidades documentadas
+## 03 · Functional Areas
 
-- Operações de crédito e débito.
-- Transferências entre contas.
-- Modelos de conta corrente e conta poupança.
-- Fluxos demonstrativos relacionados a cartões.
-- Histórico e persistência local por repositório de arquivos.
-- Implementação alternativa de repositório em memória.
-- Recursos de texto para localização, incluindo português do Brasil.
-- Testes automatizados de contas e cartões.
+Documented capabilities include:
+- Credit and debit operations.
+- Transfers between accounts.
+- Checking and savings account models.
+- Demonstrative card-related flows.
+- Transaction history and local file persistence.
+- An alternative in-memory repository.
+- Resource files for localization, including Brazilian Portuguese.
+- Automated account and card tests.
 
-## 04 · Modelo de domínio
+## 04 · Domain Model
 
-A aplicação representa conceitos de contas, cartões e usuários. Os serviços coordenam as operações de domínio, enquanto as abstrações de repositório isolam as opções de persistência. O modelo é educacional e não deve ser interpretado como uma especificação financeira completa.
+The application represents account, card and user concepts. Business operations are coordinated by services, while repository abstractions isolate persistence choices. The model is educational and should not be interpreted as a complete financial-domain specification.
 
-## 05 · Arquitetura
+## 05 · Architecture
 
 ```mermaid
 flowchart TD
-  UI[ConsoleUI] --> Program[Program]
+  UI[Console UI] --> Program[Program]
   Program --> AccountService[AccountService]
   Program --> CardService[CardService]
   AccountService --> Interface[IAccountRepository]
@@ -72,64 +73,64 @@ flowchart TD
   Tests --> CardService
 ```
 
-## 06 · Tecnologias
+## 06 · Technology Stack
 
-| Área | Implementação |
+| Area | Technology |
 |---|---|
-| Linguagem | C# |
-| Plataforma | .NET 10 |
-| Testes | xUnit |
-| Domínio | Contas, cartões e usuários |
-| Organização | Models, Services, UI e interfaces |
-| Persistência demonstrativa | Repositório em arquivo e repositório em memória |
-| Localização | Arquivos de recursos `.resx` |
+| Language | C# |
+| Runtime | .NET 10 |
+| Tests | xUnit |
+| Domain | Accounts, cards and users |
+| Organization | Models, Services, UI and repository interfaces |
+| Demonstrative persistence | File-based and in-memory repositories |
+| Localization | `.resx` resource files |
 
-## 07 · Requisitos
+## 07 · Requirements
 
-- SDK do .NET 10.
-- Terminal ou IDE compatível com aplicações .NET.
-- Git para clonar o repositório.
+- .NET 10 SDK.
+- Terminal or IDE compatible with .NET applications.
+- Git for cloning the repository.
 
-## 08 · Restaurar e executar
+## 08 · Restore and Run
 
-Na raiz do repositório:
+From the repository root:
 
 ```bash
 dotnet restore "Sistema Bancario.slnx"
 dotnet run --project "Sistema Bancario/Sistema Bancario.csproj"
 ```
 
-## 09 · Executar os testes
+## 09 · Run Automated Tests
 
 ```bash
 dotnet test "SistemaBancario.Tests/SistemaBancario.Tests.csproj"
 ```
 
-Os testes ficam separados da aplicação principal no diretório `SistemaBancario.Tests/`.
+Tests are kept separately from the main application under `SistemaBancario.Tests/`.
 
-## 10 · Precisão monetária
+## 10 · Monetary Precision
 
-O domínio utiliza `decimal` para representar valores monetários, em vez de tipos de ponto flutuante binário. Cálculos com valores financeiros simulados devem preservar regras explícitas de arredondamento e validação. Essa decisão melhora a representação decimal, mas não torna a aplicação adequada para transações reais.
+The domain uses C# `decimal` for monetary values rather than binary floating-point types. Financial-like calculations should preserve explicit rounding and validation rules. This design choice supports the educational simulation but does not make the application suitable for real financial transactions.
 
-## 11 · Persistência
+## 11 · Persistence
 
-O repositório contém uma implementação de persistência em arquivo e uma alternativa em memória. A gravação em arquivo utiliza substituição atômica para reduzir o risco de deixar um JSON parcialmente escrito. Arquivos JSON inválidos geram erros explícitos, em vez de serem ignorados silenciosamente.
+The repository includes a file-based account repository and an in-memory alternative. File persistence uses atomic replacement to reduce the risk of partially written JSON. Invalid JSON files produce explicit errors rather than being silently ignored.
 
-O armazenamento é local e educacional; não é uma solução financeira gerenciada, criptografada ou de alta disponibilidade.
+The storage implementation is local and educational; it is not a managed, encrypted or highly available financial data store.
 
-## 12 · Recursos de localização
+## 12 · Localization Resources
 
-O projeto contém arquivos de recursos `.resx` para localização de textos, incluindo português do Brasil. A presença desses arquivos não comprova cobertura completa de tradução ou seleção de idioma em todos os fluxos.
+The project includes `.resx` resource files for text localization, including Brazilian Portuguese. Resource presence does not by itself prove complete translation coverage or runtime language-selection behavior in every interface.
 
-## 13 · Segurança e uso responsável
+## 13 · Security and Safe Use
 
-Este é um projeto educacional. Operações e fluxos são simulações. Não utilize dados bancários reais, credenciais reais ou este software para movimentar dinheiro. Um sistema financeiro real exigiria, entre outros controles, engenharia de segurança, auditabilidade, criptografia, conformidade regulatória, testes adicionais e revisão independente.
+This is an educational project. Operations and flows are simulations. Do not use real banking data, real credentials or this software to move money. A real financial system would require, among other controls, security engineering, auditability, encryption, regulatory compliance, additional testing and independent review.
 
-## 14 · Qualidade e testes
+## 14 · Quality and Testing
 
-Os testes xUnit cobrem comportamentos selecionados de contas e cartões. Execute a suíte antes de depender de alterações. A cobertura e os resultados de CI devem ser avaliados a partir dos workflows atuais; eles não comprovam ausência de defeitos.
+xUnit tests cover selected account and card behavior. Run the test command before relying on changes. Test coverage and CI results should be assessed from the current repository workflows; they do not prove the absence of defects.
 
-## 15 · Estrutura do repositório
+## 15 · Repository Structure
 
 ```text
 Sistema-Bancario/
@@ -148,18 +149,18 @@ Sistema-Bancario/
 └── Sistema Bancario.slnx
 ```
 
-## 16 · Metodologia de desenvolvimento
+## 16 · Development Methodology
 
-Modelos representam conceitos de domínio, serviços coordenam operações, interfaces de repositório desacoplam persistência e testes verificam comportamentos selecionados. Alterações em regras financeiras simuladas devem incluir testes correspondentes.
+Models represent domain concepts, services coordinate operations, repository interfaces decouple persistence and tests verify selected behaviors. Changes to simulated financial rules should include corresponding tests.
 
-## 17 · Limitações conhecidas
+## 17 · Documentation and Engineering Principles
 
-A aplicação é uma simulação local, sem integração bancária, autorização regulatória, processamento de pagamentos, infraestrutura de produção ou controles suficientes para uso financeiro real. Não utilize dados pessoais ou financeiros verdadeiros.
+- [Project structure](docs/project-structure.md).
+- [Brand guide](docs/brand/README.md).
+- [.NET workflow](.github/workflows/dotnet.yml).
 
-## 18 · Documentação e licença
+Relevant principles include separation of responsibilities, persistence abstraction, tests for domain rules, environment-based configuration and data protection.
 
-- [Organização de arquivos](docs/project-structure.md).
-- [Identidade visual](docs/brand/README.md).
-- [Workflow .NET](.github/workflows/dotnet.yml).
+## 18 · License and Attribution
 
-Consulte [LICENSE.txt](LICENSE.txt) para os termos da licença.
+See [LICENSE.txt](LICENSE.txt) for the repository license and applicable terms.
