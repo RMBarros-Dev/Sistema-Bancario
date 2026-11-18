@@ -163,3 +163,29 @@ A aplicação é uma simulação local, sem integração bancária, autorizaçã
 - [Workflow .NET](.github/workflows/dotnet.yml).
 
 Consulte [LICENSE.txt](LICENSE.txt) para os termos da licença.
+
+
+## Métricas de Engenharia
+
+<div align="center">
+  <img src="https://img.shields.io/github/stars/RMBarros-Dev/Sistema-Bancario?style=flat-square&label=stars" alt="Estrelas no GitHub" />
+  <img src="https://img.shields.io/github/forks/RMBarros-Dev/Sistema-Bancario?style=flat-square&label=forks" alt="Forks no GitHub" />
+  <img src="https://img.shields.io/github/issues/RMBarros-Dev/Sistema-Bancario?style=flat-square&label=issues%20abertas" alt="Issues abertas" />
+  <img src="https://img.shields.io/badge/runtime-.NET%2010-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt=".NET 10" />
+</div>
+
+<!-- REPOSITORY_METRICS_START -->
+_As métricas de linguagens serão geradas pelo GitHub Actions após a primeira execução bem-sucedida._
+<!-- REPOSITORY_METRICS_END -->
+
+### Verificação técnica
+
+| Dimensão | Evidência implementada | Limite da medição |
+|---|---|---|
+| Runtime / linguagem | C# com .NET 10 | Aplicação educacional de console. |
+| Arquitetura | Models, services, UI e abstrações de repositório | Implementações de repositório em arquivo e em memória estão documentadas. |
+| Persistência | Armazenamento local em JSON e alternativa em memória | Não é um armazenamento criptografado, gerenciado ou de alta disponibilidade. |
+| Localização | Arquivos de recursos .resx, incluindo português brasileiro | A presença dos recursos não comprova cobertura completa de tradução. |
+| Testes automatizados | Projeto de testes xUnit separado | Executar com dotnet test; percentual de cobertura não publicado. |
+| CI | [Workflow dotnet](.github/workflows/dotnet.yml) | Resultado atual indicado pelo badge acima. |
+| Análise estática de segurança | [Workflow CodeQL](.github/workflows/codeql.yml) | Execução do workflow não equivale a certificação de segurança. |
