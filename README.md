@@ -185,7 +185,7 @@ See [LICENSE.txt](LICENSE.txt) for the repository license and applicable terms.
 | C# | 28,507 | 98.56% |
 | PowerShell | 416 | 1.44% |
 
-_Total measured source bytes: 28,923. Refreshed: 2026-11-23 14:41 UTC._
+_Total measured source bytes: 28,923. Refreshed: 2026-11-24 14:54 UTC._
 
 <!-- REPOSITORY_METRICS_END -->
 
